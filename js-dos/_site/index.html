@@ -22,18 +22,16 @@
   <script>
     emulators.pathPrefix = "js-dos/";
     Dos(document.getElementById("jsdos"), {
-/* using js-dos services, readmore: https://js-dos.com/v7/build/docs/jsdos-services#saveload-on-backend
       clientId: (userGesture) => {
         if (!userGesture) {
             return Promise.resolve(null); // <-- return cached { namespace, id } or null
         }
 
         return Promise.resolve({
-            namespace: "test", // <-- your namespace
-            id: "client", // <-- some id of user
+            namespace: "JSDOSDOCKER", // <-- your namespace
+            id: "JSDOSDOCKER", // <-- some id of user
         })
-      }
-*/      
+      }  
     }).run("bundle.jsdos");
   </script>
 </body>
